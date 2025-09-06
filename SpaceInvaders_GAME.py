@@ -131,6 +131,7 @@ while running:
         bulletState='ready'
     elif bulletState=='fire':
         FireBullet(bulletX,bulletY)
+        bulletY-=bulletYchange
     player(playerX,playerY)
     showScore(textX,textY)
     g.display.update()
